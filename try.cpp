@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//Enter the number of the field to play at that position
 char matrix[3][3] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
 char player = 'X';
 int n;
@@ -171,7 +172,7 @@ char win()
     {
         return 'X';
     }
-    if(matrix[0][0]=='X' && matrix[1][2]=='X' && matrix[2][2]=='X')
+    if (matrix[0][0] == 'X' && matrix[1][2] == 'X' && matrix[2][2] == 'X')
     {
         return 'X';
     }
@@ -205,7 +206,7 @@ char win()
     {
         return '0';
     }
-    if(matrix[0][0]=='0' && matrix[1][2]=='0' && matrix[2][2]=='0')
+    if (matrix[0][0] == '0' && matrix[1][2] == '0' && matrix[2][2] == '0')
     {
         return '0';
     }
